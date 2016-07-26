@@ -134,13 +134,13 @@
 @end
 
 
-@interface customShapeImageView()
+@interface ocCustomShapeImageView()
 {
     CAShapeLayer *_maskLayer;
 }
 @end
 
-@implementation customShapeImageView
+@implementation ocCustomShapeImageView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

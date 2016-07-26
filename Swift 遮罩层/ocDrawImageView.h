@@ -29,7 +29,7 @@ typedef enum {
 @end
 
 
-@interface customShapeImageView : UIImageView
+@interface ocCustomShapeImageView : UIImageView
 
 
 @end

@@ -10,6 +10,11 @@
 		301263B71D368D8F0036E002 /* ocDrawImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 301263B61D368D8F0036E002 /* ocDrawImageView.m */; };
 		302044CB1D33850100479C22 /* communication_chat_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 302044CA1D33850100479C22 /* communication_chat_right.png */; };
 		30457A9F1D3698430094FB17 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30457A9E1D3698430094FB17 /* UIView+Frame.swift */; };
+		3076CA621D47A8F900D39096 /* chat_Bubble_Friend.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 3076CA601D47A8F900D39096 /* chat_Bubble_Friend.tiff */; };
+		3076CA631D47A8F900D39096 /* chat_Bubble_Myself.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 3076CA611D47A8F900D39096 /* chat_Bubble_Myself.tiff */; };
+		3076CA691D47AFDC00D39096 /* tabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076CA681D47AFDC00D39096 /* tabViewCell.swift */; };
+		3076CA6B1D47B9A800D39096 /* ios_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3076CA6A1D47B9A800D39096 /* ios_profile.png */; };
+		3076CA6D1D47BA5600D39096 /* bg_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3076CA6C1D47BA5600D39096 /* bg_1.png */; };
 		30BBEDD01D27F3BD00128E1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BBEDCF1D27F3BD00128E1F /* AppDelegate.swift */; };
 		30BBEDD21D27F3BD00128E1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BBEDD11D27F3BD00128E1F /* ViewController.swift */; };
 		30BBEDD51D27F3BD00128E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BBEDD31D27F3BD00128E1F /* Main.storyboard */; };
@@ -44,6 +49,11 @@
 		301263B61D368D8F0036E002 /* ocDrawImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ocDrawImageView.m; sourceTree = "<group>"; };
 		302044CA1D33850100479C22 /* communication_chat_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = communication_chat_right.png; sourceTree = "<group>"; };
 		30457A9E1D3698430094FB17 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		3076CA601D47A8F900D39096 /* chat_Bubble_Friend.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = chat_Bubble_Friend.tiff; sourceTree = "<group>"; };
+		3076CA611D47A8F900D39096 /* chat_Bubble_Myself.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = chat_Bubble_Myself.tiff; sourceTree = "<group>"; };
+		3076CA681D47AFDC00D39096 /* tabViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabViewCell.swift; sourceTree = "<group>"; };
+		3076CA6A1D47B9A800D39096 /* ios_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_profile.png; sourceTree = "<group>"; };
+		3076CA6C1D47BA5600D39096 /* bg_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_1.png; sourceTree = "<group>"; };
 		30BBEDCC1D27F3BD00128E1F /* Swift 遮罩层.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift 遮罩层.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BBEDCF1D27F3BD00128E1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30BBEDD11D27F3BD00128E1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,12 +120,17 @@
 			isa = PBXGroup;
 			children = (
 				30CB96521D27F7F00036C409 /* image.png */,
+				3076CA6A1D47B9A800D39096 /* ios_profile.png */,
+				3076CA6C1D47BA5600D39096 /* bg_1.png */,
 				30BBEDCF1D27F3BD00128E1F /* AppDelegate.swift */,
 				30BBEDD11D27F3BD00128E1F /* ViewController.swift */,
 				30CB96541D27FA630036C409 /* bubbleView.swift */,
+				3076CA681D47AFDC00D39096 /* tabViewCell.swift */,
 				30457A9E1D3698430094FB17 /* UIView+Frame.swift */,
 				301263B51D368D8F0036E002 /* ocDrawImageView.h */,
 				301263B61D368D8F0036E002 /* ocDrawImageView.m */,
+				3076CA601D47A8F900D39096 /* chat_Bubble_Friend.tiff */,
+				3076CA611D47A8F900D39096 /* chat_Bubble_Myself.tiff */,
 				302044CA1D33850100479C22 /* communication_chat_right.png */,
 				30BBEDD31D27F3BD00128E1F /* Main.storyboard */,
 				30BBEDD61D27F3BD00128E1F /* Assets.xcassets */,
@@ -248,11 +263,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3076CA621D47A8F900D39096 /* chat_Bubble_Friend.tiff in Resources */,
 				30BBEDDA1D27F3BD00128E1F /* LaunchScreen.storyboard in Resources */,
+				3076CA6D1D47BA5600D39096 /* bg_1.png in Resources */,
 				302044CB1D33850100479C22 /* communication_chat_right.png in Resources */,
 				30BBEDD71D27F3BD00128E1F /* Assets.xcassets in Resources */,
 				30BBEDD51D27F3BD00128E1F /* Main.storyboard in Resources */,
+				3076CA6B1D47B9A800D39096 /* ios_profile.png in Resources */,
 				30CB96531D27F7F00036C409 /* image.png in Resources */,
+				3076CA631D47A8F900D39096 /* chat_Bubble_Myself.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +300,7 @@
 				30457A9F1D3698430094FB17 /* UIView+Frame.swift in Sources */,
 				30CB96551D27FA630036C409 /* bubbleView.swift in Sources */,
 				301263B71D368D8F0036E002 /* ocDrawImageView.m in Sources */,
+				3076CA691D47AFDC00D39096 /* tabViewCell.swift in Sources */,
 				30BBEDD01D27F3BD00128E1F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

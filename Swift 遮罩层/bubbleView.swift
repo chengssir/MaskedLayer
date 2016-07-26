@@ -19,17 +19,15 @@ class customShapeImageView: UIImageView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.Custom()
-        
     }
     
-    func Custom() {
+    func Custom(imageName : NSString) {
         //http://www.kancloud.cn/manual/ios/97766
         maskLayer = CAShapeLayer()
         maskLayer!.frame = self.bounds
         maskLayer?.contentsScale = UIScreen.mainScreen().scale//像素尺寸和视图大小的比例 3.0
-        maskLayer?.contentsCenter = CGRectMake(0.5, 0.5, 0.1, 0.1)//可以用来定义全面拉伸的范围
-        maskLayer?.contents = UIImage.init(named: "communication_chat_right")?.CGImage
+        maskLayer?.contentsCenter = CGRectMake(0.7, 0.7, 0.1, 0.1)//可以用来定义全面拉伸的范围
+        maskLayer?.contents = UIImage.init(named: imageName as String)?.CGImage
         self.layer.mask = maskLayer
     }
     
