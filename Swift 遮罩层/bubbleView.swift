@@ -33,9 +33,8 @@ class customShapeImageView: UIImageView {
     
 }
 
-class drawImageView: UIImageView {
+class drawImageView: customShapeImageView {
 
-    var maskLayer : CAShapeLayer?
     var contentLayer : CALayer?
 
     override var image: UIImage?{

@@ -20,21 +20,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_1.png" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UAb-LN-n5w">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="objective-c" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmt-WQ-wgH">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="objective-c" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmt-WQ-wgH">
                                 <rect key="frame" x="300" y="64" width="300" height="21"/>
                                 <color key="backgroundColor" red="1" green="0.44743133370394317" blue="0.28098243396078237" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X92-9i-9r4">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X92-9i-9r4">
                                 <rect key="frame" x="0.0" y="64" width="300" height="21"/>
                                 <color key="backgroundColor" red="0.54342007587432317" green="1" blue="0.73834530979726565" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="VFO-La-7e9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -43,13 +43,13 @@
                                 </variation>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M5y-Nu-Eh2">
-                                <rect key="frame" x="0.0" y="85" width="600" height="515"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="M5y-Nu-Eh2" firstAttribute="top" secondItem="Pmt-WQ-wgH" secondAttribute="bottom" id="4VD-X6-AdR"/>
+                            <constraint firstItem="M5y-Nu-Eh2" firstAttribute="top" secondItem="Pmt-WQ-wgH" secondAttribute="bottom" constant="-21" id="4VD-X6-AdR"/>
                             <constraint firstItem="UAb-LN-n5w" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="7EG-00-c2p"/>
                             <constraint firstItem="Pmt-WQ-wgH" firstAttribute="leading" secondItem="X92-9i-9r4" secondAttribute="trailing" id="Iun-Ea-sBe"/>
                             <constraint firstItem="M5y-Nu-Eh2" firstAttribute="trailing" secondItem="UAb-LN-n5w" secondAttribute="trailing" id="Ive-tO-inw"/>
@@ -63,7 +63,7 @@
                             <constraint firstItem="Pmt-WQ-wgH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fBI-XQ-Z7b"/>
                             <constraint firstItem="M5y-Nu-Eh2" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="hYQ-LQ-niQ"/>
                             <constraint firstItem="UAb-LN-n5w" firstAttribute="top" secondItem="X92-9i-9r4" secondAttribute="top" id="xuD-hc-Njl"/>
-                            <constraint firstItem="M5y-Nu-Eh2" firstAttribute="top" secondItem="X92-9i-9r4" secondAttribute="bottom" id="yZg-SJ-3gA"/>
+                            <constraint firstItem="M5y-Nu-Eh2" firstAttribute="top" secondItem="X92-9i-9r4" secondAttribute="bottom" constant="-21" id="yZg-SJ-3gA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="A4j-dP-wVx"/>
