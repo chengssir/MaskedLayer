@@ -20,15 +20,15 @@ class ViewController: UIViewController{
         self.array = NSMutableArray()
         for _ in 0..<20 {
             // 字典转模型并将模型添加到模型数组中
-            array.addObject("\(arc4random()%2)")
+            array.add("\(arc4random()%2)")
         }
 
         
         self.tableView.dataSource = self;
         self.tableView.delegate = self;
-        self.tableView.backgroundColor = UIColor.clearColor()
-        self.tableView.separatorStyle = .None
-        self.tableView.registerClass(tabViewCell.self, forCellReuseIdentifier: "cell")
+        self.tableView.backgroundColor = UIColor.clear
+        self.tableView.separatorStyle = .none
+        self.tableView.register(tabViewCell.self, forCellReuseIdentifier: "cell")
         
      
         
@@ -45,13 +45,13 @@ class ViewController: UIViewController{
 
 extension ViewController :UITableViewDataSource ,UITableViewDelegate{
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return array.count
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        let index: String  = array.objectAtIndex(indexPath.row) as! String
+        let index: String  = array.object(at: (indexPath as NSIndexPath).row) as! String
         print(index)
 
         if index ==  "0" {
@@ -61,22 +61,22 @@ extension ViewController :UITableViewDataSource ,UITableViewDelegate{
         return 100
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let index: String  = array.objectAtIndex(indexPath.row) as! String
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let index: String  = array.object(at: (indexPath as NSIndexPath).row) as! String
 
-        let cell = tabViewCell.init(style: .Default, reuseIdentifier: "cell" ,shareT:index == "0" ? .Swift_Custom : .Swift_Pentagone )
-        cell.backgroundColor = index == "0" ? UIColor.clearColor() : UIColor.clearColor()
-        cell.selectionStyle = .None
-        print("\(indexPath.row % 2)")
-        cell.isMySelf = indexPath.row % 2 == 0 ? true : false
+        let cell = tabViewCell.init(style: .default, reuseIdentifier: "cell" ,shareT:index == "0" ? .swift_Custom : .swift_Pentagone )
+        cell.backgroundColor = index == "0" ? UIColor.clear : UIColor.clear
+        cell.selectionStyle = .none
+        print("\((indexPath as NSIndexPath).row % 2)")
+        cell.isMySelf = (indexPath as NSIndexPath).row % 2 == 0 ? true : false
         
         return cell
     }
     
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print(indexPath.row)
+        print((indexPath as NSIndexPath).row)
     }
     
     

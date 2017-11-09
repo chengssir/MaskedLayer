@@ -9,8 +9,8 @@
 import UIKit
 
 enum ShapeType{
-    case Swift_Custom
-    case Swift_Pentagone
+    case swift_Custom
+    case swift_Pentagone
 }
 
 class tabViewCell: UITableViewCell {
@@ -23,7 +23,7 @@ class tabViewCell: UITableViewCell {
      
         if isMySelf == true {
             bubbleImageView?.Custom("chat_Bubble_Myself.tiff")
-            headImageView?.right = UIScreen.mainScreen().bounds.width - 10
+            headImageView?.right = UIScreen.main.bounds.width - 10
             bubbleImageView?.right = (headImageView?.left)! - 10
 
         }else{
@@ -35,21 +35,21 @@ class tabViewCell: UITableViewCell {
 
     }
     
-    private func prepareUI(shareT : ShapeType) {
+    fileprivate func prepareUI(_ shareT : ShapeType) {
         
         switch shareT {
-        case .Swift_Custom:
-            bubbleImageView = customShapeImageView.init(frame: CGRectMake(0, 10, 120, 180))
+        case .swift_Custom:
+            bubbleImageView = customShapeImageView.init(frame: CGRect(x: 0, y: 10, width: 120, height: 180))
             break
-        case .Swift_Pentagone:
-            bubbleImageView = drawImageView.init(frame: CGRectMake(0, 10, 120, 180))
+        case .swift_Pentagone:
+            bubbleImageView = drawImageView.init(frame: CGRect(x: 0, y: 10, width: 120, height: 180))
             break
         }
         
         bubbleImageView!.image = UIImage.init(named: "image")
         self.contentView.addSubview(bubbleImageView!)
 
-        headImageView = UIImageView.init(frame: CGRectMake(0, 0, 44, 44))
+        headImageView = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         headImageView!.image = UIImage.init(named: "ios_profile")
         self.contentView.addSubview(headImageView!)
 

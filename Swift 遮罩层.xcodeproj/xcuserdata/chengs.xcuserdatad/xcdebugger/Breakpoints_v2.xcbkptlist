@@ -14,7 +14,41 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
-            endingLineNumber = "11">
+            endingLineNumber = "11"
+            landmarkName = "ShapeType"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift_&#x906e;&#x7f69;&#x5c42;.tabViewCell.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; Swift_&#x906e;&#x7f69;&#x5c42;.tabViewCell"
+                  moduleName = "Swift &#x906e;&#x7f69;&#x5c42;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chengs/github/MaskedLayer/Swift%20%E9%81%AE%E7%BD%A9%E5%B1%82/tabViewCell.swift"
+                  timestampString = "511345612.046626"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift_&#x906e;&#x7f69;&#x5c42;.tabViewCell.__allocating_init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; Swift_&#x906e;&#x7f69;&#x5c42;.tabViewCell"
+                  moduleName = "Swift &#x906e;&#x7f69;&#x5c42;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chengs/github/MaskedLayer/Swift%20%E9%81%AE%E7%BD%A9%E5%B1%82/tabViewCell.swift"
+                  timestampString = "511345612.049745"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
